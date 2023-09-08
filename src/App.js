@@ -3,22 +3,42 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <div id="header">
+        <h1>Ranking</h1>
+      </div>
+      <div id="leaderboard">
+        <div className="ribbon"></div>
+        <table>
+
+          <tr>
+            <td class="number">1</td>
+            <td><img className='image' /></td>
+            <td class="name">Lee Taeyong</td>
+            <td className="points">
+              34 <img class="gold-medal" src="https://github.com/malunaridev/Challenges-iCodeThis/blob/master/4-leaderboard/assets/gold-medal.png?raw=true" alt="gold medal" />
+            </td>
+          </tr>
+          <tr>
+            <td className="number">2</td>
+            <td><img className='image' /></td>
+            <td className="name">Mark Lee</td>
+            <td className="points">32</td>
+          </tr>
+          <tr>
+            <td className="number">3</td>
+            <td><img className='image' /></td>
+            <td className="name">Xiao Dejun</td>
+            <td className="points">5</td>
+          </tr>
+
+
+
+        </table>
+
+      </div>
+    </main>
+
   );
 }
 
